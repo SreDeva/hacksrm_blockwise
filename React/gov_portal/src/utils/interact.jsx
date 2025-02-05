@@ -41,7 +41,6 @@ export default async function uploadFileToContract(file, data, _fileName, _holde
 
     const contract = new ethers.Contract(contractAddress, ContractAbi, signer);
     
-    
     console.log("File", encryptedFileData.file)
     const added = await ipfs.add(encryptedFileData.file);
     console.log('File uploaded successfully. IPFS hash:', added.path);
