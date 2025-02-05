@@ -18,6 +18,7 @@ const ipfs = create({
   protocol: 'http',
 });
 
+
 export default async function uploadFileToContract(file, data, _fileName, _holder) {
   try {
     if (!file || !(file instanceof File)) {
@@ -39,6 +40,7 @@ export default async function uploadFileToContract(file, data, _fileName, _holde
     const signer = provider.getSigner();
 
     const contract = new ethers.Contract(contractAddress, ContractAbi, signer);
+    
     
     console.log("File", encryptedFileData.file)
     const added = await ipfs.add(encryptedFileData.file);
