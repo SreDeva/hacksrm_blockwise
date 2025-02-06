@@ -1,6 +1,5 @@
 import CryptoJS from 'crypto-js';
-import JSEncrypt from 'jsencrypt';// Import your RSA library or implementation
-
+import JSEncrypt from 'jsencrypt';
 const STATIC_RSA_PUBLIC_KEY = `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr3t0V6G+lBfWq3hiz5d7
 fYcGxsbdVmsQb+XQoXoi/N+fVcOeMwYbhImbmMvD3/W0+lA9Db9xeiwZFrGjeoxO

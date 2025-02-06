@@ -325,6 +325,24 @@ export const ContractAbi = [
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      }
+    ],
+    "name": "transferDocuments",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "components": [
           {
             "internalType": "string",
@@ -382,7 +400,7 @@ export const ContractAbi = [
     "type": "function"
   }
 ]
-export const contractAddress = '0x5Cf3497A1FeC51AE6886a1343070c831da56Ff38';
+export const contractAddress = '0xDb7e029b122f27DA446A6b0A0D0eb926bd85Af48';
 export const provider = "https://polygonzkevm-cardona.g.alchemy.com/v2/q3LpIAKv2V2gdd775yda3khmgS3_el5y";
 
 

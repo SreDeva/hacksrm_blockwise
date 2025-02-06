@@ -44,9 +44,6 @@ export default async function getFileByHash(fileHash) {
         const receipt = await txResponse.wait();
         console.log('Transaction receipt:', receipt);
 
-        // Decode the result from the receipt (if needed)
-        // const result = await contract.getFileInfo(fileHash); // Or another method if the function is a view function
-        // console.log('Result:', result);
       } catch (error) {
         console.error('An error occurred during the transaction:', error);
         throw error;
